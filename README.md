@@ -9,7 +9,7 @@ pip install pypiwin32
 两个线程，一个用来下载壁纸，一个用来轮换壁纸，循环时间均从配置文件读取。
 壁纸下载线程下载壁纸到特定目录，轮换线程遍历该目录，随机获取一张壁纸路径并设置。
 ## 知识点
-threading：多线程
-pypiwin32：访问windows系统API的库
-configparser：配置文件操作
-os：文件操作
+threading：多线程。
+pypiwin32：访问windows系统API的库。
+configparser：配置文件操作。
+os：文件操作。
