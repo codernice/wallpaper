@@ -49,7 +49,7 @@ def fing_pic_url(url, html):
 # 爬虫入库
 def crawl(page,search):
     # 1\. 进入壁纸查询页面
-    hub_url = 'https://wallhaven.cc/search?q=' + search + '&page=' + str(page)
+    hub_url = 'https://wallhaven.cc/search?q=' + search + '&sorting=random&page=' + str(page)
     res = requests.get(hub_url)
     html = res.text
 
