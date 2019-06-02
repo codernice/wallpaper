@@ -83,9 +83,13 @@ def setWallPaper(pic):
 def searchImage():
     # 获取壁纸路径
     imagePath = os.path.abspath(os.curdir) + '\images'
+    if not os.path.exists(imagePath):
+        os.makedirs(imagePath)
     # 获取路径下文件
     files = os.listdir(imagePath)
     # 随机生成壁纸索引
+    if len(files) == 0:
+        return
     index = random.randint(0,len(files)-1)
     for i in range(0,len(files)):
         path = os.path.join(imagePath,files[i])
